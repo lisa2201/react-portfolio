@@ -34,7 +34,7 @@ export default function Profile() {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'M <span className="highlighted-text">Ehiedu</span>
+              Hello, I'M <span className="highlighted-text">Pavi</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -65,7 +65,7 @@ export default function Profile() {
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me </button>
-            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+            <a href="pavi.pdf" download="Pavi.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
