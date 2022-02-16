@@ -75,8 +75,8 @@ const Resume = (props) => {
     },
 
     {
-      title: "Mobile E-shop",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Movie db",
+      duration: { fromDate: "2018", toDate: "2019" },
       description:
         "An ecommerce application designed to sell products online wth payment system integration",
       subHeading:
