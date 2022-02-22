@@ -96,23 +96,23 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Social Builder "}
+        subHeading={"Web Developer"}
+        fromDate={"03/2021"}
+        toDate={"03/2022"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Vocational Training Center (Sri Lanka) "}
+        subHeading={"NVQ Level 5"}
+        fromDate={"2016"}
+        toDate={"2016"}
       />
       <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={"High School (Sri Lanka)"}
+        subHeading={"Advance Level"}
+        fromDate={"2011"}
+        toDate={"2013"}
       />
     </div>,
 
@@ -120,34 +120,47 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"Excella Business Service Pvt LTd"}
+          subHeading={"Front-end Developer INTERN"}
+          fromDate={"10/2021"}
+          toDate={"12/2021"}
         />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>
-          <br />
-        </div>
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Vapiona/Chessy(Disney)"}
+          subHeading={"Cashier"}
+          fromDate={"12/2019"}
+          toDate={"06/2021"}
+        />
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"FiveGuys(Disney)"}
+          subHeading={"Cashier"}
+          fromDate={"03/2019"}
+          toDate={"11/2019"}
+        />
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Embassy of Sri Lanka (paris)"}
+          subHeading={"Adjoint administratif INTERN"}
+          fromDate={"01/2018"}
+          toDate={"07/2018"}
+        />
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={" Qualys hotel (Rosny sous Bois)"}
+          subHeading={"Receptionist INTERN"}
+          fromDate={"07/2018"}
+          toDate={"07/2018"}
+        />
       </div>
     </div>,
 
