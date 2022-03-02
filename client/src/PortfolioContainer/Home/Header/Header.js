@@ -7,10 +7,30 @@ import ScrollService from "../../../utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
+import { AppsConst } from "../../../admin/AppsConst";
 
 export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
   const [showHeaderOptions, setShowHeaderOptions] = useState(false);
+
+  useEffect(() => {
+    fetch(`http://localhost:5002/api/users`)
+      .then(response => {
+        if (response) {
+          return response.json()
+        }
+        throw response;
+      })
+      .then(data => {
+        AppsConst.user= data[0]
+      })
+      .catch(error => {
+        console.error("error data", error);
+      })
+      .finally(() => {
+        console.log(AppsConst.user)
+      })
+  }, []);
 
   const updateCurrentScreen = (currentScreen) => {
     if (!currentScreen || !currentScreen.screenInView) return;
@@ -57,6 +77,7 @@ export default function Header() {
     };
   }, [currentScreenSubscription]);
 
+
   return (
     <div
       className="header-container"
@@ -70,7 +91,10 @@ export default function Header() {
           <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
         </div>
         <div className="header-logo">
-          <span>Pavi</span>
+          <span>
+            {/* {AppsConst.user.name} */}
+            Pavi
+            </span>
         </div>
         <div
           className={

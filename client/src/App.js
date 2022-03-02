@@ -1,13 +1,24 @@
 import "./App.css";
-import PortfolioContainer from "./PortfolioContainer/PortfolioContainer";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {
+  BrowserRouter,
+  Routes, // instead of "Switch"
+  Route,
+} from "react-router-dom";
+import Login from "./admin/Login";
+import Home from "./home/home";
+import Profile from "./admin/profile";
 
 function App() {
   return (
     <div className="App">
-      <ToastContainer />
-      <PortfolioContainer />
+      <BrowserRouter>
+        <Routes>
+        <Route exact path="/" element={<Home/>}></Route>
+          <Route exact path="/login" element={<Login/>}></Route>
+          <Route exact path="/profile" element={<Profile/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
